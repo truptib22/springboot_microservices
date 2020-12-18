@@ -1,0 +1,12 @@
+server:
+  port: 7777
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+
+# In above configuration, the properties eureka.client.* are related to the service clients who want to register with Eureka.
+# The property eureka.client.register-with-eureka=false specifies that this server should not be registered to the service client itself.
+# The property eureka.client.fetch-registry=false specifies that the server should not fetch the registered information to itself.
